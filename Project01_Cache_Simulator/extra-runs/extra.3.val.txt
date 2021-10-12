@@ -1,0 +1,60 @@
+===== Simulator configuration =====
+BLOCKSIZE:                    16
+L1_SIZE:                      1024
+L1_ASSOC:                     2
+VC_NUM_BLOCKS:                0
+L2_SIZE:                      0
+L2_ASSOC:                     0
+trace_file:                   perl_trace.txt
+
+===== L1 contents =====
+set 0    : 2000f6      2000da      
+set 1    : 2000df  D   2000f6      
+set 2    : 2000f6      200168  D   
+set 3    : 20015b      200163      
+set 4    : 200163  D   200168  D   
+set 5    : 2000f6      20006a  D   
+set 6    : 200160      2000f6      
+set 7    : 200160      3d819f  D   
+set 8    : 2000de      2000f6      
+set 9    : 2000f5      2000e4  D   
+set 10   : 2000b0  D   2000de      
+set 11   : 200011      2000de      
+set 12   : 200011      2000de      
+set 13   : 2000f5      2000f4      
+set 14   : 2000f4      3d819f  D   
+set 15   : 2000c9      200168  D   
+set 16   : 2000f6      200168  D   
+set 17   : 20009d  D   2000f4      
+set 18   : 2000de  D   2000f4      
+set 19   : 2000f2      20015a  D   
+set 20   : 2000f4      200063      
+set 21   : 20009d      200099      
+set 22   : 200063      2000f4      
+set 23   : 2000f4  D   200099  D   
+set 24   : 2000f5      3d819e  D   
+set 25   : 2000f5  D   200167  D   
+set 26   : 2000f5      2000de      
+set 27   : 2000de      3d819d      
+set 28   : 3d819d      2000f4      
+set 29   : 2000f4      200167  D   
+set 30   : 2000f4      20015a  D   
+set 31   : 200167  D   2000e9      
+
+===== Simulation results =====
+a. number of L1 reads:                  70107
+b. number of L1 read misses:            16426
+c. number of L1 writes:                 29893
+d. number of L1 write misses:           5930
+e. number of swap requests:             0
+f. swap request rate:                   0.0000
+g. number of swaps:                     0
+h. combined L1+VC miss rate:            0.2236
+i. number writebacks from L1/VC:        8252
+j. number of L2 reads:                  0
+k. number of L2 read misses:            0
+l. number of L2 writes:                 0
+m. number of L2 write misses:           0
+n. L2 miss rate:                        0.0000
+o. number of writebacks from L2:        0
+p. total memory traffic:                30608

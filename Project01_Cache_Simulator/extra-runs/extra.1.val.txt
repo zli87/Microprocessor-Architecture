@@ -1,0 +1,78 @@
+===== Simulator configuration =====
+BLOCKSIZE:                    32
+L1_SIZE:                      1536
+L1_ASSOC:                     3
+VC_NUM_BLOCKS:                0
+L2_SIZE:                      8192
+L2_ASSOC:                     8
+trace_file:                   gcc_trace.txt
+
+===== L1 contents =====
+set 0    : 20028d  D   20018a      20028e  D   
+set 1    : 2001c1  D   20028d  D   200153  D   
+set 2    : 200223  D   20028d  D   200241      
+set 3    : 20018a      2001ac  D   20028e  D   
+set 4    : 20018f  D   2000f9      20017a  D   
+set 5    : 200009      20017a      2000fa      
+set 6    : 200009      2000f9      20028d      
+set 7    : 200009      2001ac      2000fa      
+set 8    : 200009      3d819c  D   20017b  D   
+set 9    : 200009      2000fa      2000f9      
+set 10   : 200009      200214      2000fa      
+set 11   : 200009      2001ab      20013a      
+set 12   : 20018f  D   2001f2      2001aa      
+set 13   : 20028d  D   20018d  D   20013a      
+set 14   : 20013a      20018d  D   20028d  D   
+set 15   : 2001f8  D   20028c  D   20013a      
+
+===== L2 contents =====
+set 0    : 1000c5      1000cc  D   100147      1000bd  D   1000fa  D   100146  D   100158  D   100157  D   
+set 1    : 100147  D   1000cc  D   1000fc  D   1000da  D   100146  D   100154  D   10014e  D   10014c  D   
+set 2    : 1000c5      1000cc  D   100147  D   100146  D   100154  D   100158  D   1000c6      100151  D   
+set 3    : 1000c5      1000d6      100147      1000d8  D   100146  D   1000bd  D   100158  D   100151  D   
+set 4    : 1000c5      100147  D   1000bd  D   100146  D   1000d6  D   10007c      100158  D   100151  D   
+set 5    : 1000bd      100147  D   10007d      1000c5      1000d9  D   100146  D   100158  D   100157  D   
+set 6    : 1000d9  D   1000c5      1000d6  D   100146  D   1000f2  D   1000de  D   100158  D   100157  D   
+set 7    : 10007d      1000d6      1000d9  D   1000fb  D   100146  D   1000bd      100158  D   100157  D   
+set 8    : 10007d      1000d9  D   1000d5      100146  D   1000fe  D   1ec0ce      100158  D   100157  D   
+set 9    : 1000d9  D   10007d      1ec0ce  D   1000d5      100146  D   10014d  D   100158  D   100153  D   
+set 10   : 10010a  D   1000d5      1000fe  D   10007d      100146  D   1000d9  D   1000d7      100158  D   
+set 11   : 1000d5      10010a  D   10009d      100146  D   1ec0ce  D   100158  D   100153  D   100151  D   
+set 12   : 1000c5  D   1000f9      1000d5      10009d      100146  D   1000fa  D   10007c      100158  D   
+set 13   : 100146  D   10009d      1000d9  D   1000ff  D   100111  D   100158  D   100145  D   100157  D   
+set 14   : 100146  D   10009d      1000d9  D   1000d4  D   1000e8      100158  D   100145  D   100157  D   
+set 15   : 10009d      1000fc  D   100111  D   100146      100158  D   100145  D   100157  D   100156  D   
+set 16   : 1000d5      1000e8  D   100146      1000e7      100111  D   1ec0ce  D   100158  D   100145  D   
+set 17   : 1000e0      100146  D   1000a9  D   10009d      10007d      1000e8  D   100158  D   100152  D   
+set 18   : 100111  D   100120      1000e0  D   100146  D   1000a4      10009d      1000fb  D   1000fe  D   
+set 19   : 100146  D   1000e0  D   1000de  D   1000fe  D   100158  D   100152  D   100145  D   100157  D   
+set 20   : 10007c      100146  D   1000c7  D   10011f      1000a4      100158  D   1000b4  D   1000d6  D   
+set 21   : 100004      100146  D   10011f      1000c7  D   100145  D   100157  D   1000d6  D   100156  D   
+set 22   : 100004      10007c      100146  D   10011f      1000d6  D   100111  D   100145  D   100157  D   
+set 23   : 100004      100146  D   10011f      1000a4      1000dd  D   1000bd  D   1000d7  D   100145  D   
+set 24   : 100004      1000bd  D   10007c      1000a4      10011f      100146  D   1000fb  D   1000dd  D   
+set 25   : 100004      100146  D   10011f      10007c      1000bd  D   1000fe  D   10014d  D   10014c  D   
+set 26   : 100004      10011f      100146  D   1000d5  D   1000c7  D   100145  D   100152  D   10007b      
+set 27   : 100004      1000d5      10011f      100146  D   1000c6  D   100145  D   100157  D   100156  D   
+set 28   : 1000c7      1000d5      10011f      100146  D   1000c6  D   1000c4  D   1000d6  D   1000d7  D   
+set 29   : 100146      1000c6      1000d9  D   1000d5  D   1000e8  D   1000d7  D   1000fa  D   100145  D   
+set 30   : 100146      1000d6  D   1000c6      1000d3  D   1000fe  D   1000fa  D   100145  D   1000d9  D   
+set 31   : 1000c6  D   100146  D   1000cb  D   1000d4  D   1000e8  D   1000d6  D   1000d3  D   100145  D   
+
+===== Simulation results =====
+a. number of L1 reads:                  63640
+b. number of L1 read misses:            6835
+c. number of L1 writes:                 36360
+d. number of L1 write misses:           5097
+e. number of swap requests:             0
+f. swap request rate:                   0.0000
+g. number of swaps:                     0
+h. combined L1+VC miss rate:            0.1193
+i. number writebacks from L1/VC:        5776
+j. number of L2 reads:                  11932
+k. number of L2 read misses:            3958
+l. number of L2 writes:                 5776
+m. number of L2 write misses:           11
+n. L2 miss rate:                        0.3317
+o. number of writebacks from L2:        2399
+p. total memory traffic:                6368

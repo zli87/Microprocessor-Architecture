@@ -1,0 +1,47 @@
+===== Simulator configuration =====
+BLOCKSIZE:                    32
+L1_SIZE:                      512
+L1_ASSOC:                     1
+VC_NUM_BLOCKS:                7
+L2_SIZE:                      0
+L2_ASSOC:                     0
+trace_file:                   go_trace.txt
+
+===== L1 contents =====
+set 0    : 20011c  D   
+set 1    : 20011c  D   
+set 2    : 20011c  D   
+set 3    : 20011b  D   
+set 4    : 20011b  D   
+set 5    : 20011b  D   
+set 6    : 20011b  D   
+set 7    : 20011b  D   
+set 8    : 20011b  D   
+set 9    : 20011b  D   
+set 10   : 20011b  D   
+set 11   : 20011b  D   
+set 12   : 20011b  D   
+set 13   : 20011b  D   
+set 14   : 20011b  D   
+set 15   : 20011b  D   
+
+===== VC contents =====
+set 0    : 20011b2  D   20011b1  D   20011b0  D   20011af  D   20011ae  D   20011ad  D   20011ac  D   
+
+===== Simulation results =====
+a. number of L1 reads:                  60613
+b. number of L1 read misses:            14367
+c. number of L1 writes:                 39387
+d. number of L1 write misses:           13553
+e. number of swap requests:             27904
+f. swap request rate:                   0.2790
+g. number of swaps:                     20721
+h. combined L1+VC miss rate:            0.0720
+i. number writebacks from L1/VC:        4910
+j. number of L2 reads:                  0
+k. number of L2 read misses:            0
+l. number of L2 writes:                 0
+m. number of L2 write misses:           0
+n. L2 miss rate:                        0.0000
+o. number of writebacks from L2:        0
+p. total memory traffic:                12109
