@@ -7,7 +7,7 @@
     + [2.2 Cache Miss Rate](#22-cache-miss-rate)
     + [2.3 Swap Request Rate (SRR)](#23-swap-request-rate--srr-)
     + [2.4 Average Access Time (AAT)](#24-average-access-time--aat-)
-  * [3. Cache Simulator](#3-cache-simulator)
+  * [3. Class Hierarchy of Cache Simulator](#3-class-hierarchy-of-cache-simulator)
   * [4. Experiments](#4-experiments)
 
 ## 1. Introduction <a name="introduction"></a>
@@ -23,7 +23,7 @@ In this project, I built a simulator that can simulate four types of memory hier
 ### 2.4 Average Access Time (AAT)
 ![aat](./pic/aat.png)
 
-## 3. Cache Simulator
+## 3. Class Hierarchy of Cache Simulator
 ![class](./pic/class.png)
 
 ## 4. Experiments
