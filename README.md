@@ -1,4 +1,4 @@
-# ECE 563 Microprocessor Architecture
+# Microprocessor Architecture
 
 ## project 1: Cache Design, Memory Hierarchy Design (C++)
 - Designed a flexible cache and memory hierarchy simulator to simulate different cache sizes, associations, hierarchies.
