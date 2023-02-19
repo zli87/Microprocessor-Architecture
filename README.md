@@ -8,7 +8,7 @@
 ## project 2: Branch Prediction (C++)
 ## project 3: Dynamic Instruction Scheduling (C++)
 
-### Note: Project 4, 5, 6, 7 is based on a OOO(out-of-order) superscalar microarchitecture
+### Note: Project 4, 5, 6, 7 is based on an OOO(out-of-order) superscalar microarchitecture
 
 ## project 4: ILP Limit Study (C++)
 ## project 5: Register File and Renaming (C++)
