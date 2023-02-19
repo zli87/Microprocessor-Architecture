@@ -1,0 +1,113 @@
+
+=== PERFECT FLAGS ===============================================================
+
+PERFECT_BRANCH_PRED = 1
+PERFECT_DCACHE      = 1
+PERFECT_ICACHE      = 1
+PERFECT_TRACE_CACHE = 0
+ORACLE_DISAMBIG     = 1
+
+=== STRUCTURES AND POLICIES =====================================================
+
+FETCH QUEUE = 64
+RENAMER:
+   ACTIVE LIST = 256
+   PHYSICAL REGISTER FILE = 320
+   BRANCH CHECKPOINTS = 64
+SCHEDULER:
+   ISSUE QUEUE = 64
+   PARTITIONS = 4
+   PRESTEER = 0
+   IDEAL AGE-BASED = 1
+LOAD/STORE UNIT:
+   LOAD QUEUE = 128
+   STORE QUEUE = 128
+   SPECULATIVE DISAMBIGUATION = 0
+   USE STICKY-BIT MEMORY DEPENDENCE PREDICTOR = 0
+
+=== PIPELINE STAGE WIDTHS =======================================================
+
+FETCH WIDTH = 16
+DISPATCH WIDTH = 16
+ISSUE WIDTH = 16
+RETIRE WIDTH = 16
+
+=== EXECUTION LANES =============================================================
+
+        |latency |   BR   |   LS   |  ALU_S |  ALU_C | LS_FP  | ALU_FP |  MTF   |
+        +--------+--------+--------+--------+--------+--------+--------+--------+
+lane 0  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 1  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 2  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 3  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 4  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 5  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 6  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 7  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 8  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 9  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 10  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 11  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 12  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 13  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 14  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+lane 15  |    1   |   x    |   x    |   x    |   x    |   x    |   x    |   x    |
+
+=== MEMORY HIERARCHY ============================================================
+
+L1 I$:
+   64 KB, 8-way set-associative, 64 B block size
+   hit latency = 1 cycles
+   MHSRs = 32
+L1 D$:
+   64 KB, 4-way set-associative, 64 B block size
+   hit latency = 1 cycles
+   MHSRs = 64
+L2$:
+   256 KB, 8-way set-associative, 64 B block size
+   hit latency = 10 cycles
+   MHSRs = 64
+   miss latency = 100 cycles
+
+=== BRANCH PREDICTOR ============================================================
+
+BQ_SIZE = 512
+BTB_ENTRIES = 8192
+BTB_ASSOC = 4
+RAS_SIZE = 64
+COND_BRANCH_PRED_PER_CYCLE = 3
+CBP_PC_LENGTH = 20
+CBP_BHR_LENGTH = 16
+IBP_PC_LENGTH = 20
+IBP_BHR_LENGTH = 16
+ENABLE_TRACE_CACHE = 0
+
+=== END CONFIGURATION ===========================================================
+
+[stats]
+commit_count : 100000001
+cycle_count : 10844732
+ld_vio_count : 0
+[rates]
+ipc_rate : 9.22
+BRANCH PREDICTION MEASUREMENTS---------------------
+Type                      n          m     mr  mpki
+All                10854292          0  0.00%  0.00
+Branch              9611807          0  0.00%  0.00
+Jump Direct         1080932          0  0.00%  0.00
+Call Direct           80776          0  0.00%  0.00
+Jump Indirect             0          0  -nan%  0.00
+Call Indirect             0          0  -nan%  0.00
+Return                80777          0  0.00%  0.00
+(Number of Jump Indirects whose target was the next sequential PC = 0)
+BTB MEASUREMENTS-----------------------------------
+BTB misses (fetch cycles squashed due to a BTB miss) = 98 (0.00% of all cycles)
+LSU MEASUREMENTS-----------------------------------
+LOADS (retired)
+  loads            = 22081402
+  disambig. stall  = 62781 (0.28%)
+  forward          = 314725 (1.43%)
+  miss stall       = 0 (0.00%)
+STORES (retired)
+  stores           = 24445360
+  miss stall       = 0 (0.00%)
